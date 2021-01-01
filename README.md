@@ -8,16 +8,20 @@ Custom ROS package:
 ## Usage
 
 Clone this project into your Catkin workspace's src directory:
-`$ cd ~/catkin_ws/src`
-`$ git clone https://github.com/jarix/Robotics_ROS_Monte_Carlo_Localizer`
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/jarix/Robotics_ROS_Monte_Carlo_Localizer
+```
 
 Get ros-teleop package:
 `$ git clone https://github.com/ros-teleop/teleop_twist_keyboard`
 
 Build:
-`$ cd ~/catkin_ws`
-`$ catkin_make`
-`$ source devel/setup.bash`
+```
+$ cd ~/catkin_ws
+$ catkin_make
+$ source devel/setup.bash
+```
 
 Launch the Robot World (my_robot, Gazebo, and RViz):
 `$ roslaunch my_robot world.launch`
