@@ -1,6 +1,8 @@
-# Robotics_ROS_Monte_Carlo_Localizer
+# Robotics_ROS_RTAB-Map
 
-Robot localization within a Gazebo simulated office environment utilizing the [ROS AMCL package](http://wiki.ros.org/amcl). 
+Robot Simultaneous Localization and Mapping (SLAM) within a Gazebo simulated office environment utilizing 
+the [ROS RTAB-MAP Package](http://wiki.ros.org/rtabmap_ros).  RTAB-Map (Real-Time Appearance-Based Mapping)
+is a popular SLAM solution implemented as a ROS Packager. 
 
 Custom ROS package:
 - **my_robot**:  Simple robot consisting of 2 rotational wheels and a caster wheel for movement and a LiDAR sensor for sensing.
@@ -10,7 +12,7 @@ Custom ROS package:
 Clone this project into your Catkin workspace's src directory:
 ```
 $ cd ~/catkin_ws/src
-$ git clone https://github.com/jarix/Robotics_ROS_Monte_Carlo_Localizer
+$ git clone https://github.com/jarix/Robotics_ROS_RTAB-Map
 ```
 
 Get ros-teleop package:
@@ -26,23 +28,17 @@ $ source devel/setup.bash
 Launch the Robot World (my_robot, Gazebo, and RViz):
 `$ roslaunch my_robot world.launch`
 
-Launch AMCL:
-`$ roslaunch my_robot amcl.launch`
-
-Control robot with keyboard:
+Launch teleop to control the robot with keyboard:
 `$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
 
-or alternatively send `2D Nav Goal` commands from RViz (button on the toolbar)
+Launch RTAB-Map SLAM:
+`$ roslaunch my_robot mapping.launch`
+
+
 
 ## Environment & Dependencies
 
-Developed and tested on ROS Kinetic. Dependencies to the following packages:
-```
-$ sudo apt-get install ros-kinetic-navigation
-$ sudo apt-get install ros-kinetic-map-server
-$ sudo apt-get install ros-kinetic-move-base
-$ sudo apt-get install ros-kinetic-amcl
-```
+Developed and tested on ROS Kinetic. 
 
 ## Screenshots
 
