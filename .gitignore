@@ -1,3 +1,4 @@
 CMakeLists.txt
 teleop_twist_keyboard/
+*.db
 

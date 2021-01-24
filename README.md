@@ -26,15 +26,24 @@ $ source devel/setup.bash
 ```
 
 Launch the Robot World (my_robot, Gazebo, and RViz):
-`$ roslaunch my_robot world.launch`
+```
+$ roslaunch my_robot world.launch
+```
 
 Launch teleop to control the robot with keyboard:
-`$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py`
+```
+$ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+```
 
 Launch RTAB-Map SLAM:
-`$ roslaunch my_robot mapping.launch`
+```
+$ roslaunch my_robot mapping.launch
+```
 
-
+View the created Database:
+```
+$ rtabmap-databaseViewer ~/catkin_ws/src/my_robot/maps/rtabmap.db
+```
 
 ## Environment & Dependencies
 
@@ -42,13 +51,8 @@ Developed and tested on ROS Kinetic.
 
 ## Screenshots
 
-### Office Environment in Gazebo
+### Office Environment in Gazebo to be SLAMmed
 ![Gazebo office world](./screenshots/gazebo_world.jpg)
 
-### Unlocalized Robot
-![Unlocalized Robot](./screenshots/unlocalized_robot.jpg)
-
-### Localized Robot
-![Localized Robot](./screenshots/localized_robot.jpg)
-
+### Created MAP viewed in rtabmap-databaseViewer
 
