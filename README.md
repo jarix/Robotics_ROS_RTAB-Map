@@ -55,4 +55,4 @@ Developed and tested on ROS Kinetic.
 ![Gazebo office world](./screenshots/gazebo_world.jpg)
 
 ### Created MAP viewed in rtabmap-databaseViewer
-
+![Gazebo office world SLAM Results](./RTAB-Map_Database_Viewer.jpg) 
