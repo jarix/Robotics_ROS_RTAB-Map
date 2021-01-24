@@ -33,6 +33,10 @@ $ roslaunch my_robot world.launch
 Launch teleop to control the robot with keyboard:
 ```
 $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
+
+or 
+
+$ roslaunch my_robot teleop.launch
 ```
 
 Launch RTAB-Map SLAM:
@@ -55,4 +59,4 @@ Developed and tested on ROS Kinetic.
 ![Gazebo office world](./screenshots/gazebo_world.jpg)
 
 ### Created MAP viewed in rtabmap-databaseViewer
-![Gazebo office world SLAM Results](./RTAB-Map_Database_Viewer.jpg) 
+![Gazebo office world SLAM Results](./screenshots/RTAB-Map_Database_Viewer.jpg) 
